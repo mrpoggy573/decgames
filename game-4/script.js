@@ -1,5 +1,5 @@
 ﻿/* --- GAME CONFIG --- */
-// NAME: New Game 4
+// NAME: Pong
 // EMOJI: 🕹️
 /* ------------------- */
 
