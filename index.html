@@ -1,10 +1,16 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dec Games</title>
     <style>
         body { font-family: 'Segoe UI', sans-serif; background-color: #f0f2f5; padding: 40px; display: flex; flex-direction: column; align-items: center; }
+        
+        /* Styles for your new header section */
+        h1 { margin-bottom: 5px; text-transform: uppercase; letter-spacing: 2px; }
+        .description { color: #666; font-size: 0.95rem; margin-bottom: 20px; }
+        .line { width: 100%; max-width: 1000px; border: 0; border-top: 1px solid #d1d4d9; margin-bottom: 40px; }
+
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; width: 100%; max-width: 1000px; }
         .card { background: #fff; border-radius: 20px; padding: 30px; text-align: center; text-decoration: none; color: #333; font-weight: bold; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.2s ease; display: flex; flex-direction: column; align-items: center; gap: 15px; }
         .card:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
@@ -12,8 +18,13 @@
     </style>
 </head>
 <body>
-    <h1>Dec Games</h1>
+
+    <h1>DECGAMES</h1>
+    <p class="description">every single game me or friends have made on a website, basically</p>
+    <hr class="line">
+
     <div class="grid" id="game-grid"></div>
+
     <script>
         const games = [
             { name: "Pixel Art Maker", folder: "pixel-art", emoji: "🎨" },
